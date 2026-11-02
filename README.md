@@ -1,9 +1,12 @@
 # gdgamestudio.com
 
-Public pages served by GitHub Pages at https://gdgamestudio.com.
+The GD-GAMES web site, served by GitHub Pages at https://gdgamestudio.com.
 
-- https://gdgamestudio.com/wildwestduel/gizlilik — Wild West Duel gizlilik politikası (Turkish privacy policy)
-- https://gdgamestudio.com/wildwestduel/privacy — Wild West Duel privacy policy (English)
-- https://gdgamestudio.com/wildwestduel/hesap-silme — hesap silme / account deletion
+- https://gdgamestudio.com — studio page (Turkish; English at /en)
+- https://gdgamestudio.com/wildwestduel — Wild West Duel (Turkish; English at /wildwestduel/en)
+- /wildwestduel/gizlilik, /wildwestduel/privacy — privacy policy (Turkish, English)
+- /wildwestduel/kosullar, /wildwestduel/terms — terms of use (Turkish, English)
+- /wildwestduel/hesap-silme — account deletion
 
-The pages are generated from the game's repository (`tools/build-legal-site.js`); edit the texts there, not here.
+No JavaScript, cookies, analytics or tracking. The pages are generated from the game's repository
+(`tools/build-site.js`); edit the texts there, not here.

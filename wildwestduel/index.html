@@ -3,17 +3,79 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wild West Duel</title>
+<title>Wild West Duel — Vahşi Batı refleks düellosu</title>
+<meta name="description" content="Wild West Duel: rakibinden hızlı çiz, ilk ateş eden kazanır. Çevrimiçi dereceli düellolar, aynı cihazda iki kişilik düello, 2v2 takım düellosu. Yakında Google Play'de.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/icon-192.png">
+<link rel="alternate" hreflang="tr" href="https://gdgamestudio.com/wildwestduel/">
+<link rel="alternate" hreflang="en" href="https://gdgamestudio.com/wildwestduel/en">
 <style>
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1d1d1f;background:#fff}
-pre{white-space:pre-wrap;font-family:inherit;margin:0}
-a{color:#a0461b}
-nav{font-size:.9rem;margin-bottom:1.5rem}
-@media (prefers-color-scheme:dark){body{color:#e8e6e3;background:#161412}a{color:#f0a070}}
+:root{--bg:#f5ead7;--paper:#fffaf1;--ink:#2b1d12;--muted:#6b5543;--accent:#a0461b;--accent-ink:#fff;--line:#e2cfb3;--shadow:0 1px 3px rgba(60,30,10,.15)}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1410;--paper:#241a14;--ink:#f1e6d6;--muted:#bba48d;--accent:#e08a4f;--accent-ink:#1b1410;--line:#3d2d22;--shadow:none}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:60rem;margin:0 auto;padding:0 16px}
+header{border-bottom:3px double var(--line);background:var(--paper)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font:700 1.25rem/1 Rockwell,"Roboto Slab","Courier New",Georgia,serif;letter-spacing:.06em}
+.brand img{width:36px;height:36px;border-radius:8px}
+.lang{font-size:.9rem;white-space:nowrap}
+h1,h2{font-family:Rockwell,"Roboto Slab",Georgia,serif;line-height:1.2;letter-spacing:.02em}
+h1{font-size:clamp(1.8rem,6vw,2.6rem);margin:1.6rem 0 .4rem}
+h2{font-size:1.35rem;margin:2rem 0 .6rem;border-bottom:1px dashed var(--line);padding-bottom:.3rem}
+.lead{font-size:1.1rem;color:var(--muted);margin:0 0 1rem}
+.hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.hero img.icon{width:112px;height:112px;border-radius:24px;box-shadow:var(--shadow)}
+.hero .text{flex:1 1 18rem}
+.badge{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;padding:.45rem .9rem;border-radius:999px;letter-spacing:.03em}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow)}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);aspect-ratio:16/9;background:var(--line)}
+.shots figcaption{font-size:.85rem;color:var(--muted);margin-top:4px}
+ul.features{padding-left:1.2rem;margin:.4rem 0}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;margin:0;list-style:none}
+pre{white-space:pre-wrap;font-family:inherit;margin:0;overflow-wrap:anywhere}
+footer{margin-top:3rem;border-top:3px double var(--line);background:var(--paper);font-size:.9rem;color:var(--muted)}
+footer .wrap{padding-top:16px;padding-bottom:24px}
 </style>
 </head>
 <body>
-<h1>Wild West Duel</h1>
-<nav><a href="/wildwestduel/gizlilik">Gizlilik Politikası</a> · <a href="/wildwestduel/privacy">Privacy Policy</a> · <a href="/wildwestduel/hesap-silme">Hesap silme / Account deletion</a></nav>
+<header><div class="wrap"><a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="36" height="36">GD-GAMES</a><a class="lang" href="/wildwestduel/en" hreflang="en" lang="en">English</a></div></header>
+<main class="wrap">
+<div class="hero" style="margin-top:1.6rem">
+<img class="icon" src="/img/icon-512.png" alt="Wild West Duel simgesi" width="112" height="112">
+<div class="text"><h1 style="margin:0 0 .3rem">Wild West Duel</h1>
+<p class="lead" style="margin:0 0 .6rem">Vahşi Batı'da refleks düellosu. Hızlı çiz, ilk ateş eden kazanır.</p>
+<span class="badge">Yakında Google Play'de</span></div>
+</div>
+<h2>Oyun</h2>
+<p>İki silahşor karşı karşıya. "HAZIR OL!" dendikten sonra ekranda bir harf ya da kaydırma komutu belirir: onu rakibinden önce ve doğru çizen ateş eder. Erken davranan cezalandırılır, kırmızı tuzak komutlara kanmamak gerekir. Sonucu sunucu belirler, tepki süreleri milisaniyesine kadar ölçülür.</p>
+<ul class="features">
+<li>Çevrimiçi dereceli düellolar, ligler ve kupa yolu</li>
+<li>Aynı cihazda iki kişilik düello, arkadaşla özel oda ve 2v2 takım düellosu</li>
+<li>Haydut seferi, turnuva, ödül avı ve hayalet rakipler</li>
+<li>Günlük görevler, başarımlar, çeteler ve sezon ödülleri</li>
+<li>Karakter, kıyafet rengi, silah kaplaması ve zafer pozu seçimi</li>
+</ul>
+<h2>Ekran görüntüleri</h2>
+<ul class="shots">
+<li><figure><img src="/img/duel-command-640.jpg" srcset="/img/duel-command-640.jpg 640w, /img/duel-command.jpg 1280w" sizes="(max-width: 40rem) 100vw, 30rem" width="640" height="360" alt="Komut belirdi: kaydırma kombosunu rakibinden önce çiz." decoding="async"><figcaption>Komut belirdi: kaydırma kombosunu rakibinden önce çiz.</figcaption></figure></li>
+<li><figure><img src="/img/duel-ready-640.jpg" srcset="/img/duel-ready-640.jpg 640w, /img/duel-ready.jpg 1280w" sizes="(max-width: 40rem) 100vw, 30rem" width="640" height="360" alt="Aynı cihazda iki kişilik düello: &quot;HAZIR OL!&quot;" decoding="async"><figcaption>Aynı cihazda iki kişilik düello: &quot;HAZIR OL!&quot;</figcaption></figure></li>
+<li><figure><img src="/img/menu-640.jpg" srcset="/img/menu-640.jpg 640w, /img/menu.jpg 1280w" sizes="(max-width: 40rem) 100vw, 30rem" width="640" height="360" alt="Ana menü: günlük görevler, sefer, sezon, çete ve daha fazlası." loading="lazy" decoding="async"><figcaption>Ana menü: günlük görevler, sefer, sezon, çete ve daha fazlası.</figcaption></figure></li>
+<li><figure><img src="/img/character-640.jpg" srcset="/img/character-640.jpg 640w, /img/character.jpg 1280w" sizes="(max-width: 40rem) 100vw, 30rem" width="640" height="360" alt="Karakterini, kıyafet rengini ve silah kaplamasını seç." loading="lazy" decoding="async"><figcaption>Karakterini, kıyafet rengini ve silah kaplamasını seç.</figcaption></figure></li>
+</ul>
+<h2>Destek ve yasal</h2>
+<ul class="links">
+<li><a href="/wildwestduel/gizlilik">Gizlilik politikası</a></li>
+<li><a href="/wildwestduel/kosullar">Kullanım koşulları</a></li>
+<li><a href="/wildwestduel/hesap-silme">Hesap silme</a></li>
+<li>Destek: <a href="mailto:destek@gdgamestudio.com">destek@gdgamestudio.com</a></li>
+</ul>
+</main>
+<footer><div class="wrap">© 2026 GD-GAMES · <a href="mailto:destek@gdgamestudio.com">destek@gdgamestudio.com</a> · <a href="/wildwestduel/gizlilik">Gizlilik</a> · <a href="/wildwestduel/kosullar">Koşullar</a> · <a href="/wildwestduel/hesap-silme">Hesap silme</a><br>Bu site çerez, analiz veya takip kodu kullanmaz.</div></footer>
 </body>
 </html>

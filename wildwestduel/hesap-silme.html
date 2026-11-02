@@ -4,18 +4,50 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Wild West Duel — Hesap silme / Account deletion</title>
+<meta name="description" content="Wild West Duel — Hesap silme / Account deletion">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/icon-192.png">
+
 <style>
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1d1d1f;background:#fff}
-pre{white-space:pre-wrap;font-family:inherit;margin:0}
-a{color:#a0461b}
-nav{font-size:.9rem;margin-bottom:1.5rem}
-@media (prefers-color-scheme:dark){body{color:#e8e6e3;background:#161412}a{color:#f0a070}}
+:root{--bg:#f5ead7;--paper:#fffaf1;--ink:#2b1d12;--muted:#6b5543;--accent:#a0461b;--accent-ink:#fff;--line:#e2cfb3;--shadow:0 1px 3px rgba(60,30,10,.15)}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1410;--paper:#241a14;--ink:#f1e6d6;--muted:#bba48d;--accent:#e08a4f;--accent-ink:#1b1410;--line:#3d2d22;--shadow:none}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:60rem;margin:0 auto;padding:0 16px}
+header{border-bottom:3px double var(--line);background:var(--paper)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font:700 1.25rem/1 Rockwell,"Roboto Slab","Courier New",Georgia,serif;letter-spacing:.06em}
+.brand img{width:36px;height:36px;border-radius:8px}
+.lang{font-size:.9rem;white-space:nowrap}
+h1,h2{font-family:Rockwell,"Roboto Slab",Georgia,serif;line-height:1.2;letter-spacing:.02em}
+h1{font-size:clamp(1.8rem,6vw,2.6rem);margin:1.6rem 0 .4rem}
+h2{font-size:1.35rem;margin:2rem 0 .6rem;border-bottom:1px dashed var(--line);padding-bottom:.3rem}
+.lead{font-size:1.1rem;color:var(--muted);margin:0 0 1rem}
+.hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.hero img.icon{width:112px;height:112px;border-radius:24px;box-shadow:var(--shadow)}
+.hero .text{flex:1 1 18rem}
+.badge{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;padding:.45rem .9rem;border-radius:999px;letter-spacing:.03em}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow)}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);aspect-ratio:16/9;background:var(--line)}
+.shots figcaption{font-size:.85rem;color:var(--muted);margin-top:4px}
+ul.features{padding-left:1.2rem;margin:.4rem 0}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;margin:0;list-style:none}
+pre{white-space:pre-wrap;font-family:inherit;margin:0;overflow-wrap:anywhere}
+footer{margin-top:3rem;border-top:3px double var(--line);background:var(--paper);font-size:.9rem;color:var(--muted)}
+footer .wrap{padding-top:16px;padding-bottom:24px}
 </style>
 </head>
 <body>
-<nav><a href="/wildwestduel/gizlilik">Gizlilik Politikası</a> · <a href="/wildwestduel/privacy">Privacy Policy</a> · <a href="/wildwestduel/hesap-silme">Hesap silme / Account deletion</a></nav>
-<pre>WILD WEST DUEL — HESAP SİLME / ACCOUNT DELETION
-Geliştirici / Developer: [GGAMES] · İletişim / Contact: <a href="mailto:gurkandundarli@hotmail.com">gurkandundarli@hotmail.com</a>
+<header><div class="wrap"><a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="36" height="36">GD-GAMES</a></div></header>
+<main class="wrap">
+<p style="margin-top:1.2rem"><a href="/wildwestduel/">← Wild West Duel</a></p>
+<div class="card"><pre>WILD WEST DUEL — HESAP SİLME / ACCOUNT DELETION
+Geliştirici / Developer: GD-GAMES · İletişim / Contact: <a href="mailto:destek@gdgamestudio.com">destek@gdgamestudio.com</a>
 
 TÜRKÇE
 
@@ -27,7 +59,7 @@ Wild West Duel hesabınızı ve hesabınıza bağlı verileri iki yoldan silebil
    - Hesap sunucuda hemen silinir; bu işlem geri alınamaz.
 
 2. E-posta ile (oyunu açamıyorsanız veya kaldırdıysanız):
-   - <a href="mailto:gurkandundarli@hotmail.com">gurkandundarli@hotmail.com</a> adresine &quot;Wild West Duel hesap silme&quot; konulu bir e-posta gönderin.
+   - <a href="mailto:destek@gdgamestudio.com">destek@gdgamestudio.com</a> adresine &quot;Wild West Duel hesap silme&quot; konulu bir e-posta gönderin.
    - Hesap kimliğinizi yazın (oyunda PROFİL &gt; HESAP ekranında görünür).
      Hesap kimliğinizi bilmiyorsanız oyuncu adınızı ve hesabı en son kullandığınız tarihi yazın.
    - Talebiniz en geç 30 gün içinde yerine getirilir ve size e-postayla bildirilir.
@@ -58,7 +90,7 @@ You can delete your Wild West Duel account and the data linked to it in two ways
    - The account is deleted on the server immediately; this cannot be undone.
 
 2. By e-mail (if you cannot open the game or have uninstalled it):
-   - Send an e-mail with the subject &quot;Wild West Duel account deletion&quot; to <a href="mailto:gurkandundarli@hotmail.com">gurkandundarli@hotmail.com</a>.
+   - Send an e-mail with the subject &quot;Wild West Duel account deletion&quot; to <a href="mailto:destek@gdgamestudio.com">destek@gdgamestudio.com</a>.
    - State your account ID (shown in the game under PROFİL &gt; HESAP). If you do not know it, give your player name and
      when you last played.
    - The request is completed within 30 days and confirmed to you by e-mail.
@@ -77,6 +109,8 @@ Data kept, and for how long:
 - Error reports: not linked to your account; deleted automatically after 90 days.
 - Data on the device: deleted when you uninstall the app.
 
-Privacy policy: <a href="https://gdgamestudio.com/wildwestduel/privacy">https://gdgamestudio.com/wildwestduel/privacy</a></pre>
+Privacy policy: <a href="https://gdgamestudio.com/wildwestduel/privacy">https://gdgamestudio.com/wildwestduel/privacy</a></pre></div>
+</main>
+<footer><div class="wrap">© 2026 GD-GAMES · <a href="mailto:destek@gdgamestudio.com">destek@gdgamestudio.com</a> · <a href="/wildwestduel/gizlilik">Gizlilik</a> · <a href="/wildwestduel/kosullar">Koşullar</a> · <a href="/wildwestduel/hesap-silme">Hesap silme</a><br>Bu site çerez, analiz veya takip kodu kullanmaz.</div></footer>
 </body>
 </html>
